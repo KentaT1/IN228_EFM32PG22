@@ -34,3 +34,4 @@ This project provides a driver and application logic to monitor bus voltage, loa
 - **Resolution Sensitivity (ADCRANGE)**: Toggle `ADCRANGE` (0 or 1) under a small, stable load to verify the LSB step size improvement (312.5 nV to 78.125 nV).
 - **Accumulation Engine Validation**: Run a constant 50mA load for 5 minutes; compare `ENERGY` and `CHARGE` registers against manual $V \times I \times t$ calculations.
 - **Thermal Drift Stability**: Monitor `VSHUNT` at 0mA while varying chip temperature to verify the $\pm 0.01 \mu V/^\circ C$ offset drift specification.
+- **High-Voltage Linearity & CMRR**: Apply bus voltages from 12V up to 85V (if safe/available) to verify `VBUS` measurement linearity and ensure the `CURRENT` reading remains stable across the full common-mode range.
