@@ -24,6 +24,10 @@
 #ifndef INA228_ADCRANGE_LOW
 #define INA228_ADCRANGE_LOW  0
 #endif
+#ifndef INA228_INIT_PRINT_SHUNT_CAL
+/** After a successful `SHUNT_CAL` I2C write in `ina228_init`, print the value on stdout (VCOM if default stream is set). */
+#define INA228_INIT_PRINT_SHUNT_CAL  1
+#endif
 
 /* ADC config (reg 0x01): slower conversions + averaging reduce open-circuit noise.
  * Layout matches TI INA228 / Adafruit_INA2xx (mode in bits 15:12, avg in 2:0). */
@@ -194,6 +198,11 @@ sl_status_t ina228_init(const ina228_config_t *cfg)
     shunt_cal_u16 = 0x7FFFu;
   }
   s = ina228_write_reg16(INA228_REG_SHUNT_CAL, shunt_cal_u16);
+#if INA228_INIT_PRINT_SHUNT_CAL
+  if (s == SL_STATUS_OK) {
+    printf("INA228 SHUNT_CAL=%u (written)\r\n", (unsigned)shunt_cal_u16);
+  }
+#endif
   return s;
 }
 

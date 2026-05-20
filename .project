@@ -56,6 +56,11 @@
 			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_assert.h</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_4.1.4/platform/common/inc/sl_atomic.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_atomic.h</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_4.1.4/platform/common/inc/sl_common.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_common.h</locationURI>
@@ -66,6 +71,11 @@
 			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_enum.h</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_4.1.4/platform/common/inc/sl_slist.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_slist.h</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_4.1.4/platform/common/inc/sl_status.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/common/inc/sl_status.h</locationURI>
@@ -74,6 +84,11 @@
 			<name>gecko_sdk_4.1.4/platform/common/src/sl_assert.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/common/src/sl_assert.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/common/src/sl_slist.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/common/src/sl_slist.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_4.1.4/platform/emlib/inc/em_assert.h</name>
@@ -116,9 +131,24 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_emu.h</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_4.1.4/platform/emlib/inc/em_eusart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_eusart.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/emlib/inc/em_eusart_compat.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_eusart_compat.h</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_4.1.4/platform/emlib/inc/em_gpio.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_gpio.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/emlib/inc/em_i2c.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_i2c.h</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_4.1.4/platform/emlib/inc/em_msc.h</name>
@@ -171,9 +201,19 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_emu.c</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_4.1.4/platform/emlib/src/em_eusart.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_eusart.c</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_4.1.4/platform/emlib/src/em_gpio.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_gpio.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/emlib/src/em_i2c.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_i2c.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_4.1.4/platform/emlib/src/em_msc.c</name>
@@ -241,6 +281,16 @@
 			<locationURI>STUDIO_SDK_LOC/platform/common/toolchain/src/sl_memory.c</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_4.1.4/platform/driver/i2cspm/inc/sl_i2cspm.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/driver/i2cspm/inc/sl_i2cspm.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/driver/i2cspm/src/sl_i2cspm.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/driver/i2cspm/src/sl_i2cspm.c</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_4.1.4/platform/service/device_init/inc/sl_device_init_clocks.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/device_init/inc/sl_device_init_clocks.h</locationURI>
@@ -294,6 +344,56 @@
 			<name>gecko_sdk_4.1.4/platform/service/device_init/src/sl_device_init_nvic.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/device_init/src/sl_device_init_nvic.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/inc/sl_iostream.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/inc/sl_iostream_eusart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_eusart.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/inc/sl_iostream_stdlib_config.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_stdlib_config.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/inc/sl_iostream_uart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_uart.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/inc/sli_iostream_uart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sli_iostream_uart.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_eusart.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_eusart.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_retarget_stdio.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_retarget_stdio.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_stdlib_config.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_stdlib_config.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_uart.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_uart.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_4.1.4/platform/service/system/inc/sl_system_init.h</name>
@@ -549,51 +649,6 @@
 			<name>gecko_sdk_4.1.4/platform/Device/SiliconLabs/EFM32PG22/Source/system_efm32pg22.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/Device/SiliconLabs/EFM32PG22/Source/system_efm32pg22.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/emlib/src/em_i2c.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_i2c.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/emlib/src/em_eusart.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_eusart.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/driver/i2cspm/src/sl_i2cspm.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/driver/i2cspm/src/sl_i2cspm.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_uart.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_uart.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_eusart.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_eusart.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_retarget_stdio.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_retarget_stdio.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/service/iostream/src/sl_iostream_stdlib_config.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_stdlib_config.c</locationURI>
-		</link>
-		<link>
-			<name>gecko_sdk_4.1.4/platform/common/src/sl_slist.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/common/src/sl_slist.c</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
